@@ -1,0 +1,138 @@
+/* إعدادات عامة */
+body {
+  font-family: "Cairo", sans-serif; /* استخدم خط كايرو */
+  margin: 0;
+  padding: 0;
+  background-color: #fff3e0; /* لون خلفية برتقالي فاتح */
+  color: #333; /* لون النص */
+}
+
+/* رأس الصفحة */
+header {
+  background-color: #ff9800; /* لون برتقالي زاهي */
+  color: white;
+  padding: 20px 0;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* تأثير ظل */
+}
+
+/* الحاوية الرئيسية */
+.container {
+  max-width: 1200px; /* عرض أقصى للحاوية */
+  margin: 20px auto; /* مركز الحاوية */
+  padding: 20px;
+  background: white; /* خلفية بيضاء */
+  border-radius: 8px; /* زوايا مستديرة */
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* تأثير ظل */
+}
+
+/* قسم العناوين */
+h2 {
+  color: #ff9800; /* لون برتقالي زاهي للعناوين */
+  border-bottom: 2px solid #ff9800; /* خط تحت العنوان */
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+}
+
+/* تصميم النماذج */
+form {
+  margin-bottom: 20px; /* مسافة أسفل النموذج */
+}
+
+input[type="text"],
+input[type="datetime-local"],
+input[type="date"],
+input[type="number"],
+button {
+  padding: 10px; /* padding للنماذج */
+  border-radius: 5px; /* زوايا مستديرة */
+  border: 1px solid #ccc; /* لون إطار رمادي */
+  width: calc(100% - 22px); /* عرض شامل */
+  margin-bottom: 10px; /* مسافة أسفل */
+}
+
+input[type="text"]:focus,
+input[type="datetime-local"]:focus,
+input[type="date"]:focus,
+input[type="number"]:focus {
+  border-color: #ff9800; /* لون إطار عند التركيز */
+  outline: none; /* إزالة التحديد الافتراضي */
+}
+
+/* زر */
+button {
+  background-color: #ff9800; /* لون زر برتقالي */
+  color: white; /* لون نص الزر أبيض */
+  cursor: pointer; /* تغيير المؤشر عند التمرير */
+  transition: background-color 0.3s; /* تأثير انتقال للزر */
+}
+
+button:hover {
+  background-color: #fb8c00; /* تغيير اللون عند التمرير */
+}
+
+/* قائمة المهام والجدول */
+ul {
+  list-style-type: none; /* إزالة النقاط من القائمة */
+  padding: 0; /* إزالة padding */
+}
+
+li {
+  background: #ffe0b2; /* لون خلفية فاتح للقوائم */
+  border-radius: 5px; /* زوايا مستديرة */
+  padding: 10px; /* padding للقائمة */
+  margin-bottom: 10px; /* مسافة أسفل كل عنصر */
+  display: flex; /* استخدام Flexbox لتمكين التخطيط */
+  justify-content: space-between; /* توزيع العناصر */
+  align-items: center; /* محاذاة العناصر */
+}
+
+/* عرض المؤقت */
+.tomato-timer {
+  background-color: #ff6347; /* لون الطماطم */
+  border-radius: 50%; /* شكل دائري */
+  width: 100px;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+  color: white; /* لون نص المؤقت */
+  margin: 20px auto; /* مركز المؤقت */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* تأثير ظل */
+}
+
+/* إضافة رموز الجزر */
+.emoji-carrot {
+  font-size: 1.5rem; /* حجم أكبر للرمز التعبيري */
+}
+
+/* تصميم إطارات التعليمات */
+section {
+  margin-bottom: 40px; /* مسافة أسفل كل قسم */
+}
+
+/* روابط الموارد */
+a {
+  color: #ff9800; /* لون الرابط */
+  text-decoration: none; /* إزالة التسطير */
+}
+
+a:hover {
+  text-decoration: underline; /* إضافة تسطير عند التمرير */
+}
+
+/* تصميم الاستجابة */
+@media (max-width: 768px) {
+  input[type="text"],
+  input[type="datetime-local"],
+  input[type="date"],
+  input[type="number"],
+  button {
+    width: 100%; /* عرض كامل على الشاشات الصغيرة */
+  }
+
+  .container {
+    padding: 10px; /* تقليل padding على الشاشات الصغيرة */
+  }
+}
